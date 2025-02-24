@@ -20,7 +20,7 @@ def calculate_focus_score_and_radius(page_embeddings, site_embedding):
     return focus_score, radius
 
 # Streamlit app
-st.title("SEO Topical Focus Tool")
+st.title("SEO Topical Focus")
 
 # Input domains
 domain1 = st.text_input("Enter first domain")
@@ -33,7 +33,7 @@ if st.button("Add Topic"):
     topics.append(topic1)
 
 # Visualization type
-visualization_type = st.selectbox("Choose Visualization Type", ["2D Visualization"])
+visualization_type = st.selectbox("Choose Visualisation Type", ["2D Visualisation"])
 
 # Submit button
 if st.button("Submit"):
